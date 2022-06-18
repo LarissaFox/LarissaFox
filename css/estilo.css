@@ -1,0 +1,512 @@
+
+
+/* Layout
+-----------------------------*/
+html, body, #home {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	background: url(../imagens/capa.png),
+				url(../imagens/ruido.png),
+				linear-gradient(50deg,#000000,#ffffff);
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+nav.navbar-transparente {
+	padding: 15px 0px;
+	background: rgba(204, 17, 3, 0.579);
+}
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color: red;
+	
+}
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,0.5);
+}
+.divisor {
+	width: 1px;
+	background: white;
+	margin: 12px 15px;
+}
+/* CAPA */
+.capa {
+	text-align: center;
+}
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+.btn-roxo {
+	background: #7c25f8;
+}
+.btn-roxo:hover {
+	background: #6207e3;
+	color: white;
+}
+.btn-branco {
+	border: 2px solid white;
+}
+.btn-branco:hover {
+	background-color: white;
+	color: black;
+}
+.carousel-control-next, .carousel-control-prev {
+	width: 5%;
+}
+/* ESTRUTURA DOS CONTEÚDOS */
+.caixa {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#servicos {
+	background: rgb(0, 0, 0);
+}
+
+.albuns {
+	padding: 10px 0;
+}
+/* Rodapé
+-----------------------------*/
+footer {
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+footer h4 {
+	color: #919496;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+	color: white;
+	font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+	color: #9bf0e1;
+	text-decoration: none;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li {
+	float: right;
+	margin: 0 5px;
+}
+
+/* Tipografia
+-----------------------------*/
+h1 {
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+
+
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.btn-custom {
+		margin: 10px 15px;
+		font-size: 1em;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	h1 {
+		font-size: 3em;
+	}
+	.btn-custom {
+		margin: 10px 15px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	h1 {
+		font-size: 4em;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	h1 {
+		font-size: 5em;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 6em;
+	}
+}
+
+
+.album-localizacao{
+display: inline-block;
+display: -webkit-flex;
+justify-content: center;
+align-items: center;
+	
+}
+
+.p_do_mapa{
+	color: #000;
+	font-weight: bold;
+}
+
+.mapa{
+	width: 100%;
+	height: 400px;
+  	margin-top: 1em;
+}
+
+.galeria{
+	
+	height: 400px;
+  
+}
+
+
+/* INICIO CSS CAROUSEL*/
+.body2 {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	background-color: rgba(255, 255, 255, 0);
+
+  }
+  .body3 {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	background-color: rgba(255, 255, 255, 0);
+
+
+  }
+
+  
+  .gallery {
+    background: #EEE;
+  }
+  
+  .gallery-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+  }
+  
+  /* d */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+  
+
+ /* FIM CSS CAROUSEL*/
+ .contatos, h1
+ {
+
+	text-align: center;
+	font-size: 3em; color: white;
+	padding: 5px;
+ }
+ @font-face {
+	font-family: 'Conquera';
+	src: url(../fonts/Conquera-Bold.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'ITC';
+	src: url(../fonts/ITCAvantGardeStd-Demi.otf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fonte-conquera{
+	font-family: Conquera, Verdana, Geneva, Tahoma, sans-serif;
+}
+.fonte-itc{
+	font-family: ITC, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+#servicos h2{
+	color: #f82525;
+}
+
+
+/*  INICIO DE FONTES E ESTILOS DO MENU MOTIVOS */
+
+#recursos h2 {	
+	text-align: center;
+	font-size: 3em; color:white	;
+}
+#recursos h4 {
+	text-align: center;
+	font-size: 1.5em; color: #00FFFF;
+}
+
+#recursos h5 {
+	text-align: center;
+	font-size: 1em; color: white;
+}
+/*  FIM DE FONTES E ESTILOS DO MENU MOTIVOS */
+
+/*  INICIO DE FONTES E ESTILOS DO MENU DEPOIMENTOS */
+#depoimentos{
+	background-color: white;
+	text-align: center;
+	font-family: conquera;
+	margin-right: 120;
+}
+.body2 h3{
+	color: 	#23238E;
+	font-family: conquera;
+
+
+	text-align: center;
+}
+/*  FIM DE FONTES E ESTILOS DO MENU DEPOIMENTOS */
+/*  INICIO DE FONTES E ESTILOS DO MENU MURAL DE ALUNOS*/
+
+#galeria{
+	background-color: white;
+	text-align: center;
+	font-size: 5em; color: #23238E;
+	padding: 5px;
+}
+#galeria h1{
+	text-align: center;
+}
+
+#mural h1{
+	
+	text-align: center;
+	font-size: 5em; color: white;
+
+}
+#contatos{
+
+	text-align: center;
+	color: white ;
+}
+#localizacao{
+	background-color: white;
+	text-align: center;
+
+}
+#localizacao h2{
+	color: 	#23238E;
+	font-family: conquera;
+
+
+}
+
+
+/*  FIM DE FONTES E ESTILOS DO MENU MURAL DE ALUNOS*/
+/* STYLE DO BOTAO */
+
+.whatsapp-plug-icon {
+	position: fixed;
+	z-index: 1000;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #0ba360;
+	transition: .3s;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../imagens/Whatsapp_AdsConcept.png);
+	background-size: 50% auto;
+  }
+  .whatsapp-plug-icon:hover {
+	background-color: #15cc74;
+  }
+
+  .whatsapp-plug-icon::after, .whatsapp-plug-icon::before {
+	content: '';
+	position: absolute;
+	opacity: 0;
+	border: 4px solid #0ba361ae;
+	left: -10px;
+	top: -10px;
+	right: -10px;
+	bottom: -10px;
+	border-radius: 50%;
+	animation: WaveWhatsApp 1.5s ease infinite;
+  }
+
+  .whatsapp-plug-icon::after {
+	animation-delay: .5s;
+  }
+  .whatsapp-plug-icon:hover::after {
+	border: 1px solid #15cc747d;
+  }
+  .whatsapp-plug-icon:hover::before {
+	border: 1px solid #15cc747d;
+  }
+  @keyframes WaveWhatsApp {
+	0%{
+	  transform: scale(0.4);
+	}
+	50%{
+	  opacity: 1;
+	}
+	100%{
+	  transform: scale(2);
+	  opacity: 0;
+	}
+  }
+  /* STYLE DO BOTAO */
+
+
+
+
+.menu_depoimentos{
+	align-content: "center";
+	height: 100px;
+	height: 100px;
+}
+.menu_depoimentos img{
+	align-content: "center";
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FORMATACAO DOS ICONES*/
+.depoimento-icone{
+	background-color: white;
+	padding: 5px;
+}
+.depoimento-icone img{
+	height: 150px;
+}
+
+.mural-icone{
+	background-color: white(255, 255, 255, 0);
+	background-color: rgba(0, 0, 0, 0);
+	padding: 5px;
+
+}
+.mural-icone img{
+	height: 150px;
+}
+
+.localizacao-icone{
+	background-color: white(255, 255, 255, 0);
+	padding: 5px;
+}
+.localizacao-icone img{
+	height: 150px;
+}
+.galeria-icone{
+	background-color: white(255, 255, 255, 0);
+	padding: 5px;
+}
+.galeria-icone img{
+	height: 150px;
+}
+.contatos-icone{
+	background-color: white(255, 255, 255, 0);
+	padding: 5px;
+}
+.contatos-icone img{
+	height: 150px;
+}
+
+.img-fluid2{
+	max-width:80%;
+	
+	padding: 10px;
+	align-self:center!important;
+}   /* altera quando estano celular*/
+
+.img-fluid3{ /* altera quando estano celular*/
+	max-width:70%;
+	height:70%;
+	padding: 10px;
+	align-self:center!important;
+}   
+/*centralizar imagem e deixar pequeno no celular*/
+.col-md-121 img
+{position:relative;
+width:50%;
+min-height:1px;
+text-align: center;
+align-items: center;}
+
+
+.img-flexbox-1 {
+	max-width: 100% ;
+	display: block;
+}
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.flex > div {
+	flex:1 1 200px;
+	margin: 10px;
+
+}
